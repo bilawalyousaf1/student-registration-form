@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SMIT Registration form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img id="banner" src="images/banner1.jpg" alt="smit banner" />
+
+    <form>
+      <div class="form-box">
+        <div class="row">
+          <div class="field">
+            <label>Select country</label>
+            <select required>
+              <option>Select country</option>
+              <option>Pakistan</option>
+              <option>Turkey</option>
+              <option>Yemen</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Select Class preference</label>
+            <select required>
+              <option>Select Class preference</option>
+              <option>Online</option>
+              <option>Onsite</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Select Gender</label>
+            <select required>
+              <option>Select gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Select City</label>
+            <select required>
+              <option>Select City</option>
+              <option>Karachi</option>
+              <option>Islamabad</option>
+              <option>Lahore</option>
+              <option>Sukkur</option>
+              <option>Punjab</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Select Course or event</label>
+            <select required>
+              <option>Select Course or event</option>
+              <option>Web designing</option>
+              <option>Graphic designing</option>
+              <option>UI/UX designing</option>
+              <option>Video editing</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Full name</label>
+            <input required type="text" placeholder="Full name" name="name" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Father name</label>
+            <input required type="text" placeholder="Father name" />
+          </div>
+
+          <div class="field">
+            <label>Email</label>
+            <input required type="email" placeholder="Email" name="email" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Phone</label>
+            <input required type="tel" placeholder="03xxxxxxxxx" />
+          </div>
+
+          <div class="field">
+            <label>CNIC</label>
+            <input
+              required
+              type="text"
+              placeholder="xxxxx-xxxxxxx-x"
+              name="cnic"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Father's CNIC (optional)</label>
+            <input type="text" placeholder="Father's CNIC (optional)" />
+          </div>
+
+          <div class="field">
+            <label>Date of birth</label>
+            <input
+              required
+              type="date"
+              placeholder="Date of birth"
+              name="dob"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Select your computer proficiency</label>
+            <select required>
+              <option>Select your computer proficiency</option>
+              <option>None</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Do you have a Laptop?</label>
+            <select>
+              <option>Do you have a Laptop?</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field full">
+            <label>Last qualification</label>
+            <select required>
+              <option>Last qualification</option>
+              <option>Matric</option>
+              <option>Intermediate</option>
+              <option>Under Graduate</option>
+              <option>Graduate</option>
+              <option>Masters</option>
+              <option>PHD</option>
+              <option>Others</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field full">
+            <label>Address</label>
+            <input required type="text" placeholder="Address" name="address" />
+          </div>
+        </div>
+
+        <div class="photo-upload-box">
+          <label class="upload-btn">
+            + Upload
+            <input type="file" accept="image/*" id="fileInput" />
+            <img id="preview" />
+          </label>
+
+          <ul class="upload-rules">
+            <li>With white or blue background</li>
+            <li>File size must be less than 1MB</li>
+            <li>File type: jpg, jpeg, png</li>
+            <li>Upload passport size picture</li>
+            <li>Face clearly visible without glasses</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </div>
+    </form>
+    <script src="script.mjs"></script>
+  </body>
+</html>
